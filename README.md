@@ -5,7 +5,6 @@
 <p dir="auto">常用软件：photoshop,premiere,aftereffects,blender</p>
 <p dir="auto">公众号：后期师酱汁 本人微信：jscracker</p>
 <p dir="auto">作品集官网：https://whiteshds.gitlab.io</p>  
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" src="https://whiteshds.gitlab.io/static/image/251.png" style="max-width: 100%;"></a></p>
 </article>
   </div>
 </div>
