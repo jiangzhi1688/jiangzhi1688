@@ -4,7 +4,8 @@
 <p dir="auto">擅长制作：动画特效，广告素材，视频剪辑，诚邀长期合作-7*24小时在线</p>
 <p dir="auto">常用软件：photoshop,premiere,aftereffects,blender</p>
 <p dir="auto">公众号：后期师酱汁 本人微信：jscracker</p>
-<p dir="auto">作品集官网：https://whiteshds.gitlab.io</p>       
+<p dir="auto">作品集官网：https://whiteshds.gitlab.io</p>  
+src="https://whiteshds.gitlab.io/static/image/251.png" style="max-width: 100%;">
 </article>
   </div>
 </div>
