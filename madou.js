@@ -4,10 +4,25 @@ var rule = {
     ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
     timeout: 5000,
 
-    // 导航分类：从顶部菜单取，排除首页/热门标签/筛选
-    class_parse: 'nav ul li a&&Text&&href&&*首页|*热门标签|*筛选|*其他原创',
+    classes: [
+        { type_id: 'https://madou.club/category/%e9%ba%bb%e8%b1%86%e4%bc%a0%e5%aa%92', type_name: '麻豆传媒' },
+        { type_id: 'https://madou.club/category/%e9%ba%bb%e8%b1%86%e7%95%aa%e5%a4%96%e7%af%87', type_name: '麻豆番外篇' },
+        { type_id: 'https://madou.club/category/%e9%ba%bb%e8%b1%86%e8%8a%b1%e7%b5%ae', type_name: '麻豆花絮' },
+        { type_id: 'https://madou.club/category/hongkongdoll', type_name: 'HongKongDoll' },
+        { type_id: 'https://madou.club/category/91%e5%88%b6%e7%89%87%e5%8e%82', type_name: '91制片厂' },
+        { type_id: 'https://madou.club/category/%e6%9e%9c%e5%86%bb%e4%bc%a0%e5%aa%92', type_name: '果冻传媒' },
+        { type_id: 'https://madou.club/category/%e8%9c%9c%e6%a1%83%e5%bd%b1%e5%83%8f', type_name: '蜜桃影像' },
+        { type_id: 'https://madou.club/category/%e5%a4%a9%e7%be%8e%e4%bc%a0%e5%aa%92', type_name: '天美传媒' },
+        { type_id: 'https://madou.club/category/%e7%9a%87%e5%ae%b6%e5%8d%8e%e4%ba%ba', type_name: '皇家华人' },
+        { type_id: 'https://madou.club/category/%e5%85%94%e5%ad%90%e5%85%88%e7%94%9f', type_name: '兔子先生' },
+        { type_id: 'https://madou.club/category/%e6%98%9f%e7%a9%ba%e6%97%a0%e9%99%90%e4%bc%a0%e5%aa%92', type_name: '星空无限传媒' },
+        { type_id: 'https://madou.club/category/%e5%a4%a7%e8%b1%a1%e4%bc%a0%e5%aa%92', type_name: '大象传媒' },
+        { type_id: 'https://madou.club/category/%e7%b2%be%e4%b8%9c%e5%bd%b1%e4%b8%9a', type_name: '精东影业' },
+        { type_id: 'https://madou.club/week', type_name: '7天热门' },
+        { type_id: 'https://madou.club/month', type_name: '30天热门' },
+        { type_id: 'https://madou.club/likes', type_name: '点赞排行' },
+    ],
 
-    // 分类列表页，分页格式 /category/xxx/page/2
     列表: '.excerpts-wrapper article',
     列表_url: '/page/fypage',
     列表_id: 'a&&href',
@@ -15,14 +30,12 @@ var rule = {
     列表_name: 'h2&&Text',
     列表_remarks: '.post-view&&Text',
 
-    // 搜索
     搜索: '.excerpts-wrapper article',
     搜索_url: '/page/fypage?s=**',
     搜索_id: 'a&&href',
     搜索_img: 'img&&data-src',
     搜索_name: 'h2&&Text',
 
-    // 详情
     detail_find: 'body',
     detailObj: {
         vod_name: '.article-title&&Text',
